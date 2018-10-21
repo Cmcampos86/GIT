@@ -78,3 +78,4 @@
 -   Site para ter as chaves para autenticar e fazer os commits no github: [https://help.github.com/articles/connecting-to-github-with-ssh/](https://help.github.com/articles/connecting-to-github-with-ssh/) . Os links para configurar é o  **Generating a new SSH key**  e o **Adding your SSH key to the ssh-agent**
 -   **Origin** é o nome da origem do remoto (pode ser qualquer nome)
 -   **Fork**: pega um projeto que não é seu e faz uma cópia dele pra você. É diferente do clone que você faz uma cópia, mas o projeto é seu.
+-   Editor de arquivo README.md: **https://stackedit.io/**
