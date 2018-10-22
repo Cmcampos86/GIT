@@ -54,19 +54,23 @@
 
 -   **Merge/Rebase**
     -   Faz o merge (uni arquivo mas cria commit extra)**: git merge *NOME_BRANCH***
-    -   Faz o rebase (uni arquivos, mas deixa o histórico linear, movendo os commit para os primeiros da lista): **git rebase *NOME_BRANCH***
-	
+    -   Faz o rebase (uni arquivos, mas deixa o histórico linear, apagando commits desnecessários): **git rebase *NOME_BRANCH***
+	-   O conflito pode acontecer quando for feita alteração no mesmo arquivoe na mesma linha
+	-   Após dar o conflito pela linha de comando, é necessário abrir o arquivo e escolher entre o que estava no local (HEAD) ou o que vem no repositório do merge
+
 -   **.gitignore**
     -   Gravar o arquivo como .gitignore e colocar ***.EXTENSAO** ou o **nome do arquivo** que você quer ignorar no commit
     -   Link aonde tem alguns .gitignores por projetos: **[https://github.com/github/gitignore](https://github.com/github/gitignore)**
 	
 -   **Stash**
     -   Guarda alterações não commitadas em uma pasta/arquivo a parte
-    -   Guarda o que foi feito:  **git stash**
-    -   Aplica o que foi guardado:  **git stash apply**
+    -   Guarda o que foi feito:  **git stash save**
+    -   Aplica o que foi guardado:  **git stash apply *AREA_STASH(dar um git stash list e pegar o area stash)***
     -   Lista os stashs feitos:  **git stash list**
     -   Limpa os stashs:  **git stash clear**
-	
+	-   Apagar o stashs:  **git stash drop *AREA_STASH(dar um git stash list e pegar o area stash)***
+	-   Aplica o stash e apagar:  **git stash pop *AREA_STASH(dar um git stash list e pegar o area stash)***
+
 -   **Tags**
     -   Identificada como Release no github, tags servem para marcar a versão de um conjunto de commits
     -   Cria a tag: **git tag -a <*VERSAO*> -m "*MENSAGEM*"**
