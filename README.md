@@ -87,7 +87,8 @@
 
 -   Para repositórios privados, o github é cobrado, diferente do bitbucket que não é.
 -   **SSH** é um protocolo que serve para autenticar um usuário remoto ao servidor
--   Site para ter as chaves para autenticar e fazer os commits no github: [https://help.github.com/articles/connecting-to-github-with-ssh/](https://help.github.com/articles/connecting-to-github-with-ssh/) . Os links para configurar é o  **Generating a new SSH key**  e o **Adding your SSH key to the ssh-agent**
+-   Site para ter as chaves para autenticar e fazer os commits no github: [https://help.github.com/articles/connecting-to-github-with-ssh/](https://help.github.com/articles/connecting-to-github-with-ssh/). Os links para configurar é o  **Generating a new SSH key**  e o **Adding your SSH key to the ssh-agent**
+-   Quando for usar o git no console, pode efetuar o procedimento acima, mas quando for usar com o git extension, deve-se gerar uma key pelo generate key do putty que tem no git extensions e ai adicionar a key no git hub. Logo... teremos duas key: uma para o git e outra para git extensions.
 -   **Origin** é o nome da origem do remoto (pode ser qualquer nome)
 -   **Fork**: pega um projeto que não é seu e faz uma cópia dele pra você. É diferente do clone que você faz uma cópia, mas o projeto é seu.
 -   Editor de arquivo README.md: **https://stackedit.io/**
