@@ -1,1 +1,0 @@
-Teste para um arquivo de merge/rebase
