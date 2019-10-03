@@ -82,6 +82,9 @@
 -   **Revert**
     -   O revert não perder no histórico as coisas que foram feitas, diferente do reset que faz isso: **git revert *HASH***  
         
+-   **Configurar o repositório**
+    -   git config --global --add remote.origin.proxy "ENDERECO_PROXY"  
+    -   git config --global http.sslVerify false
 
 ## **GITHub**
 
