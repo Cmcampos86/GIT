@@ -44,7 +44,8 @@
     -   Remove um remote: **git remote rm *NOME_REMOTE***
     -   Enviar as alterações para o servidor remoto: **git push *NOME_REMOTE* *BRANCH***
     -   Clonar um repositório: **git clone *ENDEREÇO_REPOSITÓRIO NOME_REPOSITORIO***
-
+	-	Listar arquivos de configuração GIT: **git config --list --show-origin**
+	
 -   **Branches**
     -   Cria um branche e já deixa esta marcada: **git checkout -b *NOME_BRANCH***
     -   Listar branches:  **git branch**
@@ -82,9 +83,19 @@
 -   **Revert**
     -   O revert não perder no histórico as coisas que foram feitas, diferente do reset que faz isso: **git revert *HASH***  
         
--   **Configurar o repositório**
-    -   git config --global --add remote.origin.proxy "ENDERECO_PROXY"  
-    -   git config --global http.sslVerify false
+-   **Configurar o proxy**
+	-	Reset do proxy
+        -   **git config --global --unset-all remote.origin.proxy**
+        -   **git config --global --unset http.proxy**
+        -   **git config --global --unset https.proxy**
+	-	Configuração do proxy
+        -   **git config --global http.sslVerify false**
+        -   **git config --global https.sslVerify false**
+        -   **git config --global http.proxy http://username:password@enderecoproxy:porta**
+        -   **git config --global https.proxy http://username:password@enderecoproxy:porta**
+	-	Notas
+        -   Não utilizar http:// no endereço do proxy
+		-	Se a senha conter caracteres especiais, o unicode dela deve ser usado (https://pt.stackoverflow.com/questions/14421/fazer-o-git-passar-pelo-proxy)
 
 ## **GITHub**
 
