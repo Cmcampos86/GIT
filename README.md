@@ -13,7 +13,7 @@
 
 -   **Add e commit**  
     -   Adiciona um arquivo (usado para incluir ou quando há modificação):  **git add *NOME_ARQUIVO***
-	-   Adiciona todos os arquivos (usado para incluir ou quando há modificação):  **git add ***
+	-   Adiciona todos os arquivos (usado para incluir ou quando há modificação):  **git add***
     -   Efetua um commit: **git commit -m "*MENSAGEM_COMMIT*"**
     -   Efetua o commit de um arquivo que já existe (-am): **git commit -am "***MENSAGEM_COMMIT***"**
     -   Diferença na alteração do arquivo:  **git diff**
@@ -36,7 +36,7 @@
     -   Mostrando as linhas de evolução do arquivo: **git shortlog --graph**
     -   Específico pela hash:  **git show *HASH***
 	-   Compara repositório local com o remoto:  **git log --oneline --decorate --all --graph**
-    -   Tecla q finaliza o log
+    -   Tecla **q** finaliza o log
 
 -   **Configurar Repositório no GitHub**  
     -   Apontar  repositório local no remoto: **git remote add origin *ENDEREÇO_REPOSITÓRIO***
